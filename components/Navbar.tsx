@@ -39,8 +39,8 @@ const NavDropdown = ({ label, isOpen, onToggle, children }: DropdownProps) => {
   );
 };
 
-const DropdownItem = ({ icon: Icon, title, desc }: { icon: any, title: string, desc: string }) => (
-  <Link href="#" className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-all group">
+const DropdownItem = ({ icon: Icon, title, desc, href = "#" }: { icon: any, title: string, desc: string, href?: string }) => (
+  <Link href={href} className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-all group">
     <div className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
       <Icon size={20} />
     </div>
@@ -83,9 +83,9 @@ export function Navbar() {
               isOpen={openDropdown === 'products'} 
               onToggle={() => toggleDropdown(openDropdown === 'products' ? null : 'products')}
             >
-              <DropdownItem icon={Monitor} title="Extension" desc="Smart browser companion" />
-              <DropdownItem icon={Smartphone} title="Mobile App" desc="Trade on the go" />
-              <DropdownItem icon={Wallet} title="Agentic Wallet" desc="Autonomous automation" />
+              <DropdownItem href="/download" icon={Monitor} title="Extension" desc="Smart browser companion" />
+              <DropdownItem href="/download" icon={Smartphone} title="Mobile App" desc="Trade on the go" />
+              <DropdownItem href="/download" icon={Wallet} title="Agentic Wallet" desc="Autonomous automation" />
             </NavDropdown>
 
             <NavDropdown 
@@ -129,10 +129,10 @@ export function Navbar() {
 
         {/* Action Section */}
         <div className="flex items-center gap-4">
-          <button className="hidden sm:flex items-center gap-2 bg-primary text-on-primary px-6 py-2.5 rounded-xl font-black uppercase tracking-widest text-[11px] primary-glow hover:opacity-90 active:scale-95 transition-all">
+          <Link href="/download" className="hidden sm:flex items-center gap-2 bg-primary text-on-primary px-6 py-2.5 rounded-xl font-black uppercase tracking-widest text-[11px] primary-glow hover:opacity-90 active:scale-95 transition-all">
             <Download size={16} />
             Download
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

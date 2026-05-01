@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Download, ArrowUpRight, Zap, Shield, Cpu, BarChart3, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -45,15 +46,19 @@ export default function Home() {
         </motion.p>
 
         {/* CTA Button */}
-        <motion.button 
+        <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="bg-primary text-on-primary px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs flex items-center gap-3 primary-glow hover:opacity-90 active:scale-95 transition-all mb-24"
         >
-          <Download size={18} />
-          Download Molfi App
-        </motion.button>
+          <Link 
+            href="/download"
+            className="bg-primary text-on-primary px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs flex items-center gap-3 primary-glow hover:opacity-90 active:scale-95 transition-all mb-24"
+          >
+            <Download size={18} />
+            Download Molfi App
+          </Link>
+        </motion.div>
 
         {/* Ambient Glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-primary/5 rounded-full blur-[150px] pointer-events-none -z-10 animate-pulse duration-[10s]" />
