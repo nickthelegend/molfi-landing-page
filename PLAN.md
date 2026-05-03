@@ -1,40 +1,38 @@
-# Execution Plan: Promptly (Algorand AI Agent Marketplace)
+# Execution Plan: Rendr (AI Product Demo Maker)
 
-## 1. Project Initialization & Setup
+## 1. Project Initialization & Branding
+- [x] Pivot from Molfi/Promptly to **Rendr**
 - [x] Initialize Next.js 16 (App Router)
-- [x] Configure Tailwind CSS v4 with Obsidian/Purple theme
-- [x] Set up `@txnlab/use-wallet` and wallet provider wrapper
-- [x] Support for Pera, Defly, and Lute wallets
-- [x] Global styling: sticky header with glassmorphism and top-right wallet button
-- [x] Hero section UI with premium animations (Framer Motion)
+- [x] Configure Tailwind CSS v4 with Obsidian/JetBrains Mono theme
+- [x] Set up landing page foundation with Framer Motion
+- [x] Integrate HyperFrames reference demo (website-to-hyperframes)
 
-## 2. Real-time Data Layer (Convex)
-- [x] Define base schema (`users`, `agents`, `transactions`)
-- [ ] Implement query functions for fetching agent list
-- [ ] Implement mutation functions for user onboarding/registration
-- [ ] Set up real-time activity ticker via Convex queries
+## 2. Video Capture Foundation (Cap)
+- [x] Integrate Cap monorepo for desktop recording
+- [ ] Configure Rust-based capture crates for high-fidelity UI recording
+- [ ] Implement UI metadata extraction (DOM/Accessibility trees)
+- [ ] Build Tauri-based "Cap Mini" for low-latency recording triggers
 
-## 3. Marketplace UI (Design Milestone)
-- [x] Landing page Hero and navigation
-- [ ] Agent Directory grid view with glassmorphism
-- [ ] AI Agent profile detail pages (`/profiles/[id]`)
-- [x] Global Leaderboard layout
-- [x] Dashboard UI (human and agent views)
+## 3. Web Dashboard & Studio
+- [x] Hero section and marketing landing page
+- [ ] User authentication and profile management (Supabase)
+- [ ] "Studio" view for browsing and previewing generated demos
+- [ ] Video upload pipeline (streaming from Cap to Supabase)
 
-## 4. Algorand Blockchain & x402 Payments
-- [ ] Implement `ClientAvmSigner` for transaction signing
-- [ ] Integrate x402 `Resource Server` middleware for agent APIs
-- [ ] Configure x402 `Facilitator` interaction for Testnet
-- [ ] Add simple ALGO/USDC transaction signing demo
-- [ ] Display wallet balance and NFD (Non-Fungible Domain) lookup
+## 4. HyperFrames AI Integration
+- [ ] Connect frontend to HyperFrames rendering API
+- [ ] Implement "Key Moment" detection logic (AI analyzing UI metadata)
+- [ ] Generate cinematic camera paths (JSON) based on interaction points
+- [ ] Build the web-based "Refinement Editor" for adjusting AI zooms/pans
 
-## 5. Agent-to-Agent Interactions
-- [ ] Create agent task fulfillment logic (resource delivery)
-- [ ] Implement reputation system based on task success and on-chain verification
-- [ ] Register agents on the Bazaar (discovery protocol)
+## 5. Sharing & Distribution
+- [ ] Public sharing pages with glassmorphic video player
+- [ ] One-click export to GIF/MP4
+- [ ] Browser extension for instant "Capture this Page" functionality
+- [ ] Slack/Discord integration for automated demo sharing
 
-## 6. Mainnet Launch & Optimization
-- [ ] Move network configuration from Testnet to Mainnet
-- [ ] Perform security audit for frontend and Convex functions
-- [ ] Optimize performance (bundle size, image optimization)
-- [ ] Launch production-ready version
+## 6. Hackathon Finalization & Launch
+- [ ] Performance optimization for video rendering
+- [ ] Polish landing page animations and copy
+- [ ] Create the "Launch Video" using Rendr itself
+- [ ] Submit to HeyGen Hackathon

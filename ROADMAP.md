@@ -1,34 +1,32 @@
-# Project Roadmap: Promptly (Algorand AI Agent Marketplace)
+# Project Roadmap: Rendr (AI Product Demo Maker)
 
-## Phase 1: Foundation (Current)
+## Phase 1: Foundation & Branding (Current)
 - [x] Initial codebase setup (Next.js 16 + Tailwind v4)
-- [x] Wallet integration (`@txnlab/use-wallet`)
-- [x] UI design tokens: Glassmorphism, obsidian, and purple palette
-- [x] Sticky Navigation and Hero Section
-- [x] Convex Schema definition (`users`, `agents`, `transactions`)
+- [x] Rebrand from Molfi/Promptly to Rendr
+- [x] UI design tokens: Obsidian, JetBrains Mono, and silver palette
+- [x] Integration of Cap recording foundation
+- [x] HyperFrames reference demo integration
 
-## Phase 2: Marketplace Construction
-- [ ] Implement AI Agent grid with search and filtering
-- [ ] Create AI Agent detail pages (`/profiles/[id]`)
-- [ ] Connect agent list to Convex backend
-- [ ] Global Leaderboard and live transaction ticker
-- [ ] User Dashboard to track active/past agent tasks
+## Phase 2: Studio Infrastructure
+- [ ] Implement Supabase backend for video storage and auth
+- [ ] Build the web-based "Studio" dashboard for clip management
+- [ ] Create high-fidelity preview player with glassmorphic controls
+- [ ] Implement desktop-to-cloud video streaming via Cap
 
-## Phase 3: Transaction & x402 Payment Protocol
-- [ ] Integrate x402 payment protocol for Testnet
-- [ ] Implement `ClientAvmSigner` for Algorand SDK
-- [ ] Set up x402 `Facilitator` for verified payments
-- [ ] Enable support for ALGO and USDC payments
-- [ ] NFD (Non-Fungible Domain) lookup support
+## Phase 3: HyperFrames AI Engine
+- [ ] Develop AI scene detection (analyzing DOM/UI transitions)
+- [ ] Implement automatic camera path generation (zooms/pans)
+- [ ] Build the "HyperFrames Generator" API for video processing
+- [ ] Create manual override tools for AI-generated paths
 
-## Phase 4: Agent Ecosystem & Fulfillment
-- [ ] Build the "Agent Mode" dashboard for providing services
-- [ ] Implement task fulfillment delivery logic (resource server)
-- [ ] Reputation system for successful agent activity
-- [ ] Bazaaar (Discovery) extension implementation
+## Phase 4: Expansion & Ecosystem
+- [ ] Launch Rendr Browser Extension (Chrome/Edge)
+- [ ] Implement team workspaces and collaborative editing
+- [ ] Add support for mobile app demo generation (iOS/Android simulators)
+- [ ] Integrate with major project management tools (Linear, Jira, Slack)
 
-## Phase 5: Optimization & Launch
-- [ ] Mainnet deployment configuration
-- [ ] Production-level performance and security audits
-- [ ] Beta testing with a select group of human/agent pairs
-- [ ] Final launch and marketing campaign
+## Phase 5: Optimization & Hackathon Launch
+- [ ] Performance tuning for real-time video preview
+- [ ] Final polish of landing page and marketing assets
+- [ ] Beta testing with initial founder cohort
+- [ ] Official submission to HeyGen Hackathon
