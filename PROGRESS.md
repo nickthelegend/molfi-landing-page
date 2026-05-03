@@ -1,20 +1,19 @@
-# connect-wallet-starter-v2
+# Rendr Development Progress
 
-## Status: ⚡ Active Development
+## Status: ⚡ Active Development (HeyGen Hackathon)
 
 ### Completed Features:
 - [x] Next.js 16 App Router Setup
-- [x] Tailwind CSS Configuration
-- [x] `@txnlab/use-wallet` Integration
-- [x] Wallet Provider Wrapper
-- [x] UI Components Integration (`@txnlab/use-wallet-ui-react`)
-- [x] Pera, Defly, and Lute Wallet Support
-- [x] Sticky Header with Glassmorphism
-- [x] Top-Right Wallet Connection
-- [x] Hero Section UI Polish
+- [x] Tailwind CSS v4 Configuration (Obsidian/Studio theme)
+- [x] Pivot from Molfi/Promptly to **Rendr**
+- [x] Integrated Cap Monorepo for desktop capture
+- [x] Embedded HyperFrames Reference Demo (`_references/`)
+- [x] Landing Page Hero UI with Framer Motion
+- [x] Technical Typography (JetBrains Mono) integration
 
 ### Next Steps:
-- [ ] Connect to Mainnet (currently on Testnet)
-- [ ] Implement simple transaction signing demo
-- [ ] Add account balance display
-- [ ] Add NFD (Non-Fungible Domain) lookup support
+- [ ] Connect Studio dashboard to Supabase for video hosting
+- [ ] Implement UI metadata extraction in the Cap desktop app
+- [ ] Scaffold HyperFrames AI pipeline for camera path generation
+- [ ] Launch Browser Extension boilerplate
+- [ ] Finalize "One-Click Share" flow

@@ -30,7 +30,7 @@ export default function DownloadPage() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl md:text-7xl font-black tracking-[-0.04em] mb-8 leading-[1.0] font-headline"
         >
-          Download Molfi
+          Download Rendr
         </motion.h1>
 
         {/* Subtext */}
@@ -40,13 +40,13 @@ export default function DownloadPage() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-on-surface-variant text-lg md:text-xl font-medium max-w-2xl mb-24 leading-relaxed"
         >
-          Access the most powerful agentic wallet on your preferred device. Research, trade, and automate anywhere.
+          Start turning your screen recordings into viral product demos today. Available for Desktop.
         </motion.p>
 
         {/* Download Cards */}
         <div className="w-full max-w-4xl space-y-6">
           
-          {/* Card 1: Extension */}
+          {/* Card 1: Desktop App */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,21 +55,22 @@ export default function DownloadPage() {
           >
             <div className="flex justify-between items-start relative z-10">
               <div className="flex-1">
-                <h3 className="text-2xl font-black text-white mb-4 tracking-tight">Molfi Browser Extension</h3>
+                <h3 className="text-2xl font-black text-white mb-4 tracking-tight">Rendr Desktop App</h3>
                 <p className="text-on-surface-variant font-medium leading-relaxed mb-8 max-w-xl">
-                  The full Molfi experience right in your browser. Research, trade, and deploy agents without leaving your tab.
+                  The primary Rendr experience. High-performance screen recording and instant HyperFrames AI processing.
                 </p>
                 <div className="flex items-center gap-6">
                   <button className="bg-primary text-on-primary px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[10px] primary-glow hover:opacity-90 active:scale-95 transition-all flex items-center gap-2">
-                    Add to Chrome
+                    <Download size={16} />
+                    Download for Windows
                   </button>
                   <span className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest opacity-60">
-                    Version 1.0 • Free to use
+                    Version 1.0 • Built for HeyGen Hackathon
                   </span>
                 </div>
               </div>
               <div className="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center text-on-surface-variant/20">
-                <Chrome size={48} strokeWidth={1} />
+                <Monitor size={48} strokeWidth={1} />
               </div>
             </div>
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2" />
@@ -110,7 +111,7 @@ export default function DownloadPage() {
             <div className="flex justify-between items-start relative z-10">
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <h3 className="text-2xl font-black text-white tracking-tight">Molfi Terminal</h3>
+                  <h3 className="text-2xl font-black text-white tracking-tight">Rendr Extension</h3>
                   <span className="px-2 py-0.5 rounded-md bg-white/5 text-white/40 text-[8px] font-black uppercase tracking-widest">Coming Soon</span>
                 </div>
                 <p className="text-on-surface-variant font-medium leading-relaxed mb-8 max-w-xl">
