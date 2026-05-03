@@ -1,13 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { useWallet } from '@txnlab/use-wallet-react';
-import { getAlgodClient } from '@/lib/algorand';
-import { AgentRegistryClient } from '@/lib/contracts/clients/AgentRegistryClient';
 import { useRouter } from 'next/navigation';
 
 export default function CreateAgentPage() {
-  const { activeAddress, transactionSigner } = useWallet();
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('general');
@@ -16,37 +12,23 @@ export default function CreateAgentPage() {
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!activeAddress || !transactionSigner) {
-      alert('Please connect your wallet first.');
-      return;
-    }
-
+    
     try {
       setLoading(true);
-      const algod = getAlgodClient();
       
-      const client = new AgentRegistryClient({
-        resolveBy: 'id',
-        id: Number(process.env.NEXT_PUBLIC_APP_ID_AGENT_REGISTRY ?? 2578),
-        sender: { signer: transactionSigner, addr: activeAddress }
-      }, algod);
-
-      // Metadata URI could be a JSON file uploaded to IPFS. For now, we mock it.
-      const metadataUri = `ipfs://mock-uri/${name.replace(/\s+/g, '-').toLowerCase()}`;
-
-      // Call the registerAgent method
-      await client.registerAgent({ metadataUri });
-
-      alert('Agent registered successfully on-chain!');
+      // MOCK: In a real app, this would call an API to save the agent metadata
+      console.log('Registering agent:', { name, description, category });
       
-      // Force sync with MongoDB
-      await fetch('/api/sync');
+      // Simulate network delay
+      await new Promise(resolve => setTimeout(resolve, 1500));
 
+      alert('Agent registration request submitted!');
+      
       // Go to agents list
       router.push('/agents');
     } catch (error) {
       console.error('Error registering agent:', error);
-      alert('Failed to register agent. Check console for details.');
+      alert('Failed to register agent.');
     } finally {
       setLoading(false);
     }
@@ -97,14 +79,14 @@ export default function CreateAgentPage() {
           <div className="pt-4">
             <button 
               type="submit" 
-              disabled={loading || !activeAddress}
+              disabled={loading}
               className={`w-full py-4 rounded-xl font-bold text-white transition-all ${
-                loading || !activeAddress 
+                loading 
                   ? 'bg-outline-variant/30 cursor-not-allowed text-on-surface-variant' 
                   : 'bg-primary hover:bg-primary/90 hover:scale-[1.02] shadow-lg shadow-primary/20'
               }`}
             >
-              {loading ? 'Registering on-chain...' : activeAddress ? 'Register Agent' : 'Connect Wallet to Register'}
+              {loading ? 'Submitting...' : 'Register Agent'}
             </button>
           </div>
         </form>

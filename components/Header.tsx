@@ -1,6 +1,5 @@
 'use client'
 
-import { WalletButton } from '@txnlab/use-wallet-ui-react'
 import Link from 'next/link'
 import { Zap } from 'lucide-react'
 
@@ -22,10 +21,6 @@ export function Header() {
           </nav>
           
           <div className="h-6 w-[1px] bg-zinc-800 hidden md:block" />
-          
-          <div className="wui-custom-trigger">
-            <WalletButton />
-          </div>
         </div>
       </div>
     </header>

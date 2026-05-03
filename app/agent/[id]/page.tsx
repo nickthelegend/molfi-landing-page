@@ -2,14 +2,12 @@
 
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
-import { useX402Fetch } from "@/hooks/use-x402-client";
 import { Zap, Terminal, Shield, Star, Wallet, Send, Loader2, CheckCircle, AlertCircle, ExternalLink } from 'lucide-react';
 import { Navbar } from "@/components/Navbar";
 
 export default function AgentPromptPage() {
   const params = useParams();
   const agentId = params.id as string;
-  const fetchWithPayment = useX402Fetch();
 
   const [agent, setAgent] = useState<any>(null);
   const [prompt, setPrompt] = useState("");
@@ -40,8 +38,8 @@ export default function AgentPromptPage() {
     setResponse(null);
     setError(null);
     try {
-      // The x402Client intercepts 402 responses natively
-      const res = await fetchWithPayment("/api/execute", {
+      // Standard fetch instead of X402 payment fetch
+      const res = await fetch("/api/execute", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ agentId, prompt }),
@@ -117,7 +115,7 @@ export default function AgentPromptPage() {
               </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-xl border border-white/5 text-[10px] font-black uppercase tracking-widest text-white/40">
                 <ExternalLink size={14} />
-                ALGOSCAN
+                EXPLORER
               </div>
             </div>
           </div>
@@ -132,7 +130,7 @@ export default function AgentPromptPage() {
         <div className="space-y-6">
           <div className="flex items-center justify-between px-4">
              <span className="text-[10px] font-black text-white/40 uppercase tracking-[0.3em]">Command Input</span>
-             <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em]">X402 PROTOCOL ACTIVE</span>
+             <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em]">AI INTERACTION ACTIVE</span>
           </div>
           <div className="relative group">
             <textarea 
@@ -157,7 +155,7 @@ export default function AgentPromptPage() {
               {loading ? (
                 <>
                   <Loader2 className="animate-spin" size={20} />
-                  Initiating Payment & Compute...
+                  Initiating Compute...
                 </>
               ) : (
                 <>
