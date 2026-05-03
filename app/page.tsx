@@ -22,7 +22,7 @@ export default function Home() {
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-black uppercase tracking-[0.3em] mb-12"
         >
           <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-          Built for HeyGen Hackathon
+          Powered by 0G Ethereum
         </motion.div>
 
         {/* Headline */}
@@ -32,7 +32,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl md:text-[5.5rem] font-black tracking-[-0.04em] mb-8 leading-[1.0] font-headline max-w-4xl"
         >
-          Turn Screen Records <br /> into <span className="text-primary italic">Viral</span> Product Demos
+          The Most <span className="text-primary italic">Profitable</span> Way <br /> to Trade for Degens
         </motion.h1>
 
         {/* Subheadline */}
@@ -42,7 +42,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-on-surface-variant text-lg md:text-xl font-medium max-w-2xl mb-12 leading-relaxed"
         >
-          Rendr uses HyperFrames AI Video Generation to automatically transform your raw screen recordings into polished, high-converting product demonstrations.
+          Research, trade, and deploy with Molfi — the ultimate agentic wallet designed for high-performance trading on 0G Ethereum.
         </motion.p>
 
         {/* CTA Button */}
@@ -56,7 +56,7 @@ export default function Home() {
             className="bg-primary text-on-primary px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs flex items-center gap-3 primary-glow hover:opacity-90 active:scale-95 transition-all mb-24"
           >
             <Download size={18} />
-            Download Rendr Desktop
+            Download Molfi App
           </Link>
         </motion.div>
 
@@ -68,7 +68,7 @@ export default function Home() {
       <section className="px-6 pb-48 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           
-          {/* Feature 1: HyperFrames (Large Top Card) */}
+          {/* Feature 1: Molfi Extension (Large Top Card) */}
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -79,16 +79,16 @@ export default function Home() {
             <div className="relative z-10 p-12 h-full flex flex-col justify-end">
               <div className="max-w-md">
                 <h3 className="text-3xl font-black text-white mb-4 tracking-tight flex items-center gap-3">
-                  HyperFrames AI <ArrowUpRight className="text-on-surface-variant group-hover:text-primary transition-colors" />
+                  Molfi Extension <ArrowUpRight className="text-on-surface-variant group-hover:text-primary transition-colors" />
                 </h3>
                 <p className="text-on-surface-variant font-medium leading-relaxed">
-                  Our core AI engine that understands your UI and generates cinematic camera movements, zooms, and highlights automatically.
+                  Your smart crypto companion in the browser. Research, track, and trade — all in one seamless extension powered by AI agents.
                 </p>
               </div>
             </div>
             {/* Image Placeholder */}
             <div className="absolute top-12 left-12 right-12 bottom-48 bg-black/40 rounded-3xl border border-white/5 flex items-center justify-center overflow-hidden">
-               <span className="text-white/10 font-black uppercase tracking-widest text-sm">HyperFrames Engine Visual</span>
+               <span className="text-white/10 font-black uppercase tracking-widest text-sm">Molfi Extension UI Placeholder</span>
                {/* Decorative elements to look like a UI */}
                <div className="absolute top-4 left-4 right-4 h-8 bg-white/5 rounded-lg flex items-center px-4 gap-2">
                  <div className="w-2 h-2 rounded-full bg-red-500/50" />
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* Feature 2: Rendr Desktop App */}
+          {/* Feature 2: Molfi Mobile App */}
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -107,10 +107,10 @@ export default function Home() {
           >
             <div className="relative z-10 p-12 h-full flex flex-col justify-end">
               <h3 className="text-3xl font-black text-white mb-4 tracking-tight flex items-center gap-3">
-                Desktop App <ArrowUpRight className="text-on-surface-variant group-hover:text-primary transition-colors" />
+                Molfi Mobile App <ArrowUpRight className="text-on-surface-variant group-hover:text-primary transition-colors" />
               </h3>
               <p className="text-on-surface-variant font-medium leading-relaxed">
-                Native screen recording with low overhead. Capture your workflow and let Rendr handle the rest.
+                Trade and track on the go. Your entire portfolio, available anywhere, anytime with enterprise-grade security.
               </p>
             </div>
             {/* Image Placeholder */}
@@ -128,10 +128,10 @@ export default function Home() {
           >
             <div className="relative z-10 p-12 h-full flex flex-col justify-end">
               <h3 className="text-3xl font-black text-white mb-4 tracking-tight flex items-center gap-3">
-                Extension <ArrowUpRight className="text-on-surface-variant group-hover:text-primary transition-colors" />
+                Agentic Wallet <ArrowUpRight className="text-on-surface-variant group-hover:text-primary transition-colors" />
               </h3>
               <p className="text-on-surface-variant font-medium leading-relaxed">
-                Coming soon. One-click demo generation directly from your web browser.
+                Secure, AI-powered wallet with smart automation and safety checks built-in. Let your wallet work for you.
               </p>
             </div>
             {/* Image Placeholder */}
@@ -192,9 +192,9 @@ export default function Home() {
              <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
                <Shield size={32} />
              </div>
-             <h4 className="text-2xl font-black text-white">AI Automation</h4>
+             <h4 className="text-2xl font-black text-white">Trustless Security</h4>
              <p className="text-on-surface-variant font-medium leading-relaxed">
-               No more manual editing. Rendr identifies key moments in your recording and highlights them for you.
+               Your keys, your crypto. Molfi is non-custodial and open-source, ensuring complete transparency and security.
              </p>
            </div>
            <div className="space-y-6">

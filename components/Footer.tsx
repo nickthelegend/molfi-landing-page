@@ -13,15 +13,15 @@ export function Footer() {
                         <div className="relative w-10 h-10 flex items-center justify-center transition-transform duration-300 hover:scale-110">
                             <Image 
                                 src="/logo.png" 
-                                alt="Rendr Logo" 
+                                alt="Molfi Logo" 
                                 fill 
                                 className="object-contain"
                             />
                         </div>
-                        <span className="text-2xl font-black text-white tracking-tighter uppercase font-headline">Rendr</span>
+                        <span className="text-2xl font-black text-white tracking-tighter uppercase font-headline">Molfi</span>
                     </div>
                     <p className="text-on-surface-variant text-base font-medium max-w-sm leading-relaxed">
-                        AI Product Demo Maker. Turn screen recordings into high-quality product demos using HyperFrames AI Video Generation.
+                        The ultimate agentic wallet for high-performance trading on 0G Ethereum. Research, trade, and deploy with AI.
                     </p>
                 </div>
 
@@ -29,9 +29,9 @@ export function Footer() {
                     <div className="space-y-8">
                         <h4 className="font-black text-white uppercase tracking-[0.2em] text-[11px]">Product</h4>
                         <ul className="space-y-4 font-bold text-on-surface-variant">
-                            <li><Link href="#" className="hover:text-primary transition-colors">Desktop App</Link></li>
-                            <li><Link href="#" className="hover:text-primary transition-colors">HyperFrames</Link></li>
-                            <li><Link href="#" className="hover:text-primary transition-colors">Extension (Soon)</Link></li>
+                            <li><Link href="#" className="hover:text-primary transition-colors">Extension</Link></li>
+                            <li><Link href="#" className="hover:text-primary transition-colors">Mobile App</Link></li>
+                            <li><Link href="#" className="hover:text-primary transition-colors">Agentic Wallet</Link></li>
                         </ul>
                     </div>
                     <div className="space-y-8">
@@ -54,8 +54,8 @@ export function Footer() {
             </div>
 
             <div className="max-w-7xl mx-auto mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[11px] font-black uppercase tracking-[0.3em] text-white/20">
-                <span>© 2026 Rendr AI</span>
-                <span>Built for HeyGen Hackathon</span>
+                <span>© 2026 Molfi</span>
+                <span>Powered by 0G Ethereum</span>
             </div>
         </footer>
     );

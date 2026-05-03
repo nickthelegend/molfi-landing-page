@@ -14,8 +14,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Rendr | AI Product Demo Maker",
-  description: "Turn screen recordings into high-quality product demos using HyperFrames AI Video Generation. Built for HeyGen Hackathon.",
+  title: "Molfi | The Most Profitable Way to Trade for Degens",
+  description: "Advanced AI-powered trading on 0G Ethereum. Research, trade, and deploy with Molfi.",
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",

@@ -67,13 +67,13 @@ export function Navbar() {
             <div className="relative w-8 h-8 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
               <Image 
                 src="/logo.png" 
-                alt="Rendr Logo" 
+                alt="Molfi Logo" 
                 fill 
                 className="object-contain"
                 priority
               />
             </div>
-            <span className="text-xl font-black tracking-tighter text-white uppercase font-headline">Rendr</span>
+            <span className="text-xl font-black tracking-tighter text-white uppercase font-headline">Molfi</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -83,9 +83,9 @@ export function Navbar() {
               isOpen={openDropdown === 'products'} 
               onToggle={() => toggleDropdown(openDropdown === 'products' ? null : 'products')}
             >
-              <DropdownItem href="/download" icon={Monitor} title="Desktop App" desc="AI Product Demo Maker" />
-              <DropdownItem href="/download" icon={Smartphone} title="HyperFrames" desc="AI Video Generation" />
-              <DropdownItem href="/download" icon={Wallet} title="Extension" desc="Coming Soon" />
+              <DropdownItem href="/download" icon={Monitor} title="Extension" desc="Smart browser companion" />
+              <DropdownItem href="/download" icon={Smartphone} title="Mobile App" desc="Trade on the go" />
+              <DropdownItem href="/download" icon={Wallet} title="Agentic Wallet" desc="Autonomous automation" />
             </NavDropdown>
 
             <NavDropdown 
@@ -100,7 +100,7 @@ export function Navbar() {
 
             <div className="relative" onMouseEnter={() => toggleDropdown('token')} onMouseLeave={() => toggleDropdown(null)}>
               <div className={`px-4 py-2 rounded-lg border transition-all flex items-center gap-2 cursor-pointer ${openDropdown === 'token' ? 'bg-surface-container border-primary/20' : 'bg-surface-container border-outline-variant/10'}`}>
-                <span className="text-[11px] font-black uppercase tracking-[0.2em] text-primary">$RENDR</span>
+                <span className="text-[11px] font-black uppercase tracking-[0.2em] text-primary">$MOLFI</span>
                 <ChevronDown size={12} className={`text-on-surface-variant transition-transform duration-300 ${openDropdown === 'token' ? 'rotate-180' : ''}`} />
               </div>
               <AnimatePresence>

@@ -30,7 +30,7 @@ export default function DownloadPage() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl md:text-7xl font-black tracking-[-0.04em] mb-8 leading-[1.0] font-headline"
         >
-          Download Rendr
+          Download Molfi
         </motion.h1>
 
         {/* Subtext */}
@@ -40,7 +40,7 @@ export default function DownloadPage() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-on-surface-variant text-lg md:text-xl font-medium max-w-2xl mb-24 leading-relaxed"
         >
-          Start turning your screen recordings into viral product demos today. Available for Desktop.
+          Start your journey into high-performance agentic trading on 0G Ethereum today.
         </motion.p>
 
         {/* Download Cards */}
@@ -55,9 +55,9 @@ export default function DownloadPage() {
           >
             <div className="flex justify-between items-start relative z-10">
               <div className="flex-1">
-                <h3 className="text-2xl font-black text-white mb-4 tracking-tight">Rendr Desktop App</h3>
+                <h3 className="text-2xl font-black text-white mb-4 tracking-tight">Molfi Desktop App</h3>
                 <p className="text-on-surface-variant font-medium leading-relaxed mb-8 max-w-xl">
-                  The primary Rendr experience. High-performance screen recording and instant HyperFrames AI processing.
+                  The primary Molfi experience. High-performance trading dashboard and real-time AI market analysis.
                 </p>
                 <div className="flex items-center gap-6">
                   <button className="bg-primary text-on-primary px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[10px] primary-glow hover:opacity-90 active:scale-95 transition-all flex items-center gap-2">
@@ -65,7 +65,7 @@ export default function DownloadPage() {
                     Download for Windows
                   </button>
                   <span className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest opacity-60">
-                    Version 1.0 • Built for HeyGen Hackathon
+                    Version 1.0 • Powered by 0G Ethereum
                   </span>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function DownloadPage() {
             <div className="flex justify-between items-start relative z-10">
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <h3 className="text-2xl font-black text-white tracking-tight">Rendr Extension</h3>
+                  <h3 className="text-2xl font-black text-white tracking-tight">Molfi Extension</h3>
                   <span className="px-2 py-0.5 rounded-md bg-white/5 text-white/40 text-[8px] font-black uppercase tracking-widest">Coming Soon</span>
                 </div>
                 <p className="text-on-surface-variant font-medium leading-relaxed mb-8 max-w-xl">
